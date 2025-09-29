@@ -75,13 +75,9 @@ void checkWinner(int computerChoice, int userChoice){
         printf("It's a TIE");
     }
     
-    else if (userChoice == 1 && computerChoice == 3){
-        printf("Congratulations You won!");
-    }
-    else if (userChoice == 2 && computerChoice == 1){
-        printf("Congratulations You won!");
-    }
-    else if (userChoice == 3 && computerChoice == 2){
+    else if ((userChoice == 1 && computerChoice == 3)||
+             (userChoice == 2 && computerChoice == 1)||
+             (userChoice == 3 && computerChoice == 2)){
         printf("Congratulations You won!");
     }
     else{
